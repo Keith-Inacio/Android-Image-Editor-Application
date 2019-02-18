@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HW1_CS374</string>
+    <string name="bird_text">There are 1000 species of birds. The largest bird is the Ostrich and the most common bird is the Chicken.</string>
+    <string name="cat_text">Cats are the most popular pet in the USA. It is estimated that there are 88 million pet cats owned by Americans.</string>
+    <string name="dog_text">A dog\'s sense of hearing is ten times better than that of a human. The average dog can run up to 19 miles per hour.</string>
+    <string name="rotate">ROTATE</string>
+    <string name="flip">FLIP</string>
+</resources>

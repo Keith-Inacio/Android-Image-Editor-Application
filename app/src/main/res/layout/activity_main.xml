@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/birdImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bird"
+         />
+
+    <TextView
+        android:id="@+id/birdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bird_text"
+        android:layout_toEndOf="@+id/birdImage"
+        android:layout_alignTop="@+id/birdImage"
+        android:layout_alignBottom="@+id/birdImage"
+        android:visibility="invisible"
+        android:gravity="center_vertical"
+        />
+
+    <ImageView
+        android:id="@+id/catImage"
+        android:src="@drawable/cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birdImage"
+        />
+
+    <TextView
+        android:id="@+id/catText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cat_text"
+        android:layout_toEndOf="@+id/catImage"
+        android:layout_alignTop="@+id/catImage"
+        android:layout_alignBottom="@+id/catImage"
+        android:visibility="invisible"
+        android:gravity="center_vertical"
+        />
+
+    <ImageView
+        android:id="@+id/dogImage"
+        android:src="@drawable/dog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/catImage"
+        />
+
+    <TextView
+        android:id="@+id/dogText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dog_text"
+        android:layout_toEndOf="@+id/dogImage"
+        android:layout_alignTop="@+id/dogImage"
+        android:layout_alignBottom="@+id/dogImage"
+        android:visibility="invisible"
+        android:gravity="center_vertical"
+        />
+
+    <Button
+        android:id="@+id/rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dogImage"
+        android:text="@string/rotate" />
+
+    <Button
+        android:id="@+id/flip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/rotate"
+        android:layout_below="@+id/dogImage"
+        android:text="@string/flip" />
+
+
+
+</RelativeLayout>
