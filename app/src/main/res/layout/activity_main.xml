@@ -72,7 +72,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/dogImage"
-        android:text="@string/rotate" />
+        android:text="@string/rotate"
+        android:layout_alignTop="@id/pad"
+        android:layout_alignBottom="@id/pad"/>
 
     <Button
         android:id="@+id/flip"
@@ -80,8 +82,56 @@
         android:layout_height="wrap_content"
         android:layout_toEndOf="@+id/rotate"
         android:layout_below="@+id/dogImage"
-        android:text="@string/flip" />
+        android:text="@string/flip"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@id/pad"
+        android:layout_alignBottom="@id/pad"/>
 
+    <ImageView
+        android:id="@+id/arrowUp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/ic_arrow_upward_black_24dp"
+        android:layout_toEndOf="@+id/arrowBack"
+        android:layout_below="@+id/dogImage"
+        />
+
+
+    <ImageView
+        android:id="@+id/pad"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/ic_filter_center_focus_black_24dp"
+        android:layout_toEndOf="@+id/arrowBack"
+        android:layout_below="@+id/arrowUp"
+        />
+
+    <ImageView
+        android:id="@+id/arrowBack"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+        android:layout_toEndOf="@+id/flip"
+        android:layout_below="@+id/arrowUp"
+        />
+
+    <ImageView
+        android:id="@+id/arrowForward"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp"
+        android:layout_toEndOf="@+id/pad"
+        android:layout_below="@+id/arrowUp"
+        />
+
+    <ImageView
+        android:id="@+id/arrowDown"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/ic_arrow_downward_black_24dp"
+        android:layout_toEndOf="@+id/arrowBack"
+        android:layout_below="@+id/pad"
+        />
 
 
 </RelativeLayout>
